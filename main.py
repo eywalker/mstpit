@@ -6,7 +6,8 @@ manager = Manager(app) # initialize CLI manager
 
 @app.route('/')
 def index():
-    return "Welcome to MSTPit!"
+    return render_template('index.html')
+
 
 
 if __name__ == "__main__":
